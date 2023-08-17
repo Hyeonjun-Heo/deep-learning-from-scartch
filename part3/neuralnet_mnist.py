@@ -4,7 +4,7 @@ sys.path.append(os.pardir)  # 부모 디렉터리의 파일을 가져올 수 있
 import numpy as np
 import pickle
 from dataset.mnist import load_mnist
-from commo.functions import sigmoid, softmax
+from common.functions import sigmoid, softmax
 
 
 def get_data():
