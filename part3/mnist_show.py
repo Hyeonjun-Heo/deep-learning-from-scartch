@@ -14,16 +14,11 @@ def img_show(img):
 
 img = x_train[0]
 label = t_train[0]
-print(label) # 5
+print(label)
 
 print(img.shape) # (784,)
-img = img.reshape(28, 28)
-print(img.shape) # (28,28)
+img = img.reshape(28, 28) # 원래 이미지의 모양으로 변형
+print(img.shape) # (28, 28)
 
 img_show(img)
 
-# 각 데이터의 형상 출력
-print(x_train.shape) # (60000, 784)
-print(t_train.shape) # (60000)
-print(x_test.shape) # (10000, 784)
-print(t_test.shape) # (10000,)
